@@ -19,9 +19,8 @@ function startNewGame() {
         // Computer assigns different random numbers between 1 and 12 inclusive to each of the crystals 
         for (var i=0; i<4; i++) {
             crystalNum[i] = Math.floor(Math.random() * 12) + 1;
-            console.log(crystalNum);  
         }
-
+        console.log(crystalNum); 
 }
 
 
@@ -36,10 +35,8 @@ function playGame() {
             console.log("losses are " + losses);
             startNewGame();
     }  
-
-
 } 
-        // every time a cystal is clicked, then add the value to the sum
+        // a cystal is clicked and add its value to the sum
         $("#amethyst").on("click", function () {
             sum = sum + crystalNum[0];
             console.log("amethyst " + crystalNum[0] + " Sum is " + sum);
