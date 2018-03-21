@@ -1,4 +1,10 @@
 
+
+#backgroundimage {
+    background-image: url("../images/dust_scratches.png");
+}
+
+
 .crystals {
     width: 100px;
     height: 100px;
